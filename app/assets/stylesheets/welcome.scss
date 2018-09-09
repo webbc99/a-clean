@@ -1,0 +1,59 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  color: #d2583e;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+.img-thumbnail {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  color: #fefefe;
+}
+
+.text_with_2px_border {
+  text-shadow: 
+    /* first layer at 1px */
+    -1px -1px 0px #000,
+     0px -1px 0px #000,
+     1px -1px 0px #000,
+    -1px  0px 0px #000,
+     1px  0px 0px #000,
+    -1px  1px 0px #000,
+     0px  1px 0px #000,
+     1px  1px 0px #000,
+    /* second layer at 2px */
+    -2px -2px 0px #000,
+    -1px -2px 0px #000,
+     0px -2px 0px #000,
+     1px -2px 0px #000,
+     2px -2px 0px #000,
+     2px -1px 0px #000,
+     2px  0px 0px #000,
+     2px  1px 0px #000,
+     2px  2px 0px #000,
+     1px  2px 0px #000,
+     0px  2px 0px #000,
+    -1px  2px 0px #000,
+    -2px  2px 0px #000,
+    -2px  1px 0px #000,
+    -2px  0px 0px #000,
+    -2px -1px 0px #000;
+}

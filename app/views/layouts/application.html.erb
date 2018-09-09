@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The A-Clean</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Play:400,700' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <%= link_to image_tag('a_clean_brand.png'), root_path, :class => "navbar-brand" %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item mr-3">
+              <span class="navbar-text"><i class="fa fa-phone"></i> 07787 754277</span>
+            </li>
+            <li class="nav-item mr-3">
+              <%= link_to '<i class="fa fa-envelope"></i> info@theaclean.co.uk'.html_safe, root_path, :class => 'nav-link' %>
+            </li>
+            <li class="nav-item mr-3">
+              <%= link_to '<i class="fa fa-facebook-f"></i>'.html_safe, 'https://www.facebook.com/theacleanvaleting/', :class => 'nav-link' %>
+            </li>
+            <li class="nav-item mr-3">
+              <%= link_to '<i class="fa fa-instagram"></i>'.html_safe, 'https://www.instagram.com/theaclean/', :class => 'nav-link' %>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link drowdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <%= link_to 'About', root_path, :class => 'dropdown-item' %>
+                <%= link_to 'My Mission', root_path, :class => 'dropdown-item' %>
+                <%= link_to 'Services', root_path, :class => 'dropdown-item' %>
+                <%= link_to 'Our Work', root_path, :class => 'dropdown-item' %>
+                <%= link_to 'Contact', root_path, :class => 'dropdown-item' %>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
