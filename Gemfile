@@ -54,7 +54,7 @@ end
 
 group :production do
   # Postgress for database in production as Heroku does not support sqlite
-  gem 'pg', '~>0.20'
+  gem 'pg'
   gem 'rails_12factor'
 end
 
