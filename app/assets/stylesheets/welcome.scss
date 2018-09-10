@@ -12,10 +12,16 @@ h1 {
 
 h4 {
   text-align: center;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h5 {
   text-align: center;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .img-thumbnail {
@@ -26,6 +32,12 @@ h5 {
 
 .carousel-caption {
   color: #fefefe;
+  font-family: 'Play', sans-serif;
+  text-transform: uppercase;
+}
+
+.carousel-caption h5 {
+  color: #d2583e;
 }
 
 .text_with_2px_border {
@@ -56,4 +68,100 @@ h5 {
     -2px  1px 0px #000,
     -2px  0px 0px #000,
     -2px -1px 0px #000;
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  50% {
+    opacity: .9;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro {
+  margin-top: 20%;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+#intro_line_1 {
+  margin-left: -20%;
+  opacity: 0;
+  animation-name: moveInFromLeft;
+  animation-duration: 1500ms;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#intro_line_2 {
+  opacity: 0;
+  animation-name: moveInFromLeft;
+  animation-duration: 1500ms;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#intro_line_3 {
+  margin-left: 20%;
+  opacity: 0;
+  animation-name: moveInFromLeft;
+  animation-duration: 1500ms;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeinBody {
+  0% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home-page-content {
+  opacity: 0;
+  animation-name: fadeinBody;
+  animation-duration: 1500ms;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#the {
+  font-size: 0.6em;
+  vertical-align: 70px;
+  justify: right;
+}
+
+#capital_a {
+  font-size: 2em;
+}
+
+#clean {
+  font-size: 0.6em;
 }
