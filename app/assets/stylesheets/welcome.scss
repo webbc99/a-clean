@@ -1,6 +1,15 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: 'armalite';
+  src:font-url('armalite.tff');
+  src:font-url('armalite.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 h1 {
   color: #d2583e;
   font-family: 'Play', sans-serif;
@@ -15,6 +24,7 @@ h4 {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fefefe;
 }
 
 h5 {
@@ -94,6 +104,10 @@ h5 {
   font-size: 2em;
   text-transform: uppercase;
   position: absolute;
+  // text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  //              0px 8px 13px rgba(0,0,0,0.1),
+  //              0px 18px 23px rgba(0,0,0,0.1);
+  color: #fefefe;
 }
 
 #intro_line_1 {
@@ -152,6 +166,10 @@ h5 {
   animation-iteration-count: 1;
 }
 
+#a_clean_text {
+  font-family: 'armalite' !important;
+}
+
 #the {
   font-size: 0.6em;
   vertical-align: 70px;
@@ -164,4 +182,17 @@ h5 {
 
 #clean {
   font-size: 0.6em;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #fefefe;
+  background-color: #d2583e;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: #c1472d;
 }

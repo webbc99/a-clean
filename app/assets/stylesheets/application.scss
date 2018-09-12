@@ -1,10 +1,17 @@
 @import "bootstrap";
 @import "welcome";
+@import "selling_points";
 $fa-font-path: "font-awesome/fonts";
 @import "font-awesome";
 
+// body {
+//   background: #fefefe;
+// }
+
 body {
-  background: #fefefe;
+  background: url(http://www.theaclean.co.uk/media/slides/20140710_160329.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar {
